@@ -2,6 +2,8 @@ import {LanguageChains} from "chai/lib/Assertion";
 import {NumericComparison} from "chai/lib/Assertion";
 import {TypeComparison} from "chai/lib/Assertion";
 import { Assert } from 'chai/lib/Assert';
+import '~chai/lib/Assertion';
+import '~chai/lib/Assert';
 
 declare namespace ChaiPromised {
 
@@ -257,8 +259,8 @@ declare namespace ChaiPromised {
     }
 }
 
-declare module 'chai/lib/Assertion' {
-    interface Assertion extends LanguageChains, NumericComparison, TypeComparison {
+declare module '~chai/lib/Assertion' {
+    interface Assertion {
         eventually: ChaiPromised.PromisedAssertion;
         become(expected: any): ChaiPromised.PromisedAssertion;
         fulfilled: ChaiPromised.PromisedAssertion;
@@ -268,7 +270,7 @@ declare module 'chai/lib/Assertion' {
     }
 }
 
-declare module 'chai/lib/Assert' {
+declare module '~chai/lib/Assert' {
     interface Assert {
         eventually: ChaiPromised.PromisedAssert;
         isFulfilled(promise: Promise<any>, message?: string): Promise<void>;

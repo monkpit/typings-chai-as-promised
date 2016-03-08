@@ -1,4 +1,4 @@
-///<reference path="../bundle.d.ts"/>
+///<reference path="../bundle.d.ts/main.d.ts"/>
 
 
 import * as chai from 'chai';
