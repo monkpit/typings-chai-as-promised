@@ -4,6 +4,7 @@ import {TypeComparison} from "chai/lib/Assertion";
 import { Assert } from 'chai/lib/Assert';
 import '~chai/lib/Assertion';
 import '~chai/lib/Assert';
+import Promise = require("pinkie-promise");
 
 declare namespace ChaiPromised {
 
