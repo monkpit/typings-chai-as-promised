@@ -3,6 +3,7 @@
   "main": "index.d.ts",
   "homepage": "https://github.com/domenic/chai-as-promised",
   "dependencies": {
-    "chai": "registry:npm/chai#3.4.0+20160308201903"
+    "chai": "registry:npm/chai#3.4.0+20160308201903",
+    "pinkie-promise": "registry:npm/pinkie-promise#1.0.0+20160211003958"
   }
 }

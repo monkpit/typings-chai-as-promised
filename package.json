@@ -10,5 +10,8 @@
     "ts-node": "^0.5.5",
     "tslint": "^3.5.0",
     "typescript": "^1.8.7"
+  },
+  "dependencies": {
+    "pinkie-promise": "^2.0.1"
   }
 }
